@@ -48,7 +48,7 @@ function lambdaSchool(num) {
      var resultArray = [num];
      if (fiveDiv = 0) {resultArray.unshift("School")};
      if (threeDiv = 0) {resultArray.unshift("Lambda")};
-     if (resultArray.length() = 3) {return resultArray[0] + " " + resultArray[1]};
+     if (resultArray.length() > 2) {return resultArray[0] + " " + resultArray[1]};
      if (resultArray.length() < 3) {return resultArray[0]};
 }
 
@@ -63,8 +63,14 @@ function lambdaSchool(num) {
              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 */
 
-function longestString() {
-
+function longestString(strs) {
+     newLong = "";
+     strs.foreach(str) {
+          if ( str.length() > newLong.length()) {
+               newLong = str;
+          }
+     }
+     return newLong;    
 }
 
 /*
@@ -88,9 +94,15 @@ function longestString() {
              computeUserAverageAge(users); // returns 62 (This number is rounded up from 61.6666)
 */
 
-function computeUserAverageAge() {
-
-}
+function computeUserAverageAge(users) {
+     numUsers = 0;
+     sumAges = 0;
+     users.foreach(user) {
+          numUsers ++1;
+          sumAges += sumAges;
+     }
+     return Math.round(sumAges/numUsers);
+};
 
 module.exports = {
  helloWorld,
