@@ -7,10 +7,8 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
-     
      return "Hello World!";
-
-}
+};
 
 /*
 2. Write a function called lambdaSchool that has a single parameter called num.
@@ -50,7 +48,7 @@ function lambdaSchool(num) {
      if (threeDiv = 0) {resultArray.unshift("Lambda")};
      if (resultArray.length() > 2) {return resultArray[0] + " " + resultArray[1]};
      if (resultArray.length() < 3) {return resultArray[0]};
-}
+};
 
 /*
 3. Write a function called longestString that has a single parameter called strs.
@@ -65,13 +63,13 @@ function lambdaSchool(num) {
 
 function longestString(strs) {
      newLong = "";
-     strs.foreach(str) {
+     strs.forEach(str) {
           if ( str.length() > newLong.length()) {
                newLong = str;
-          }
-     }
+          };
+     };
      return newLong;    
-}
+};
 
 /*
 4. Write a function called computeUserAverageAge that has a single parameter called users
@@ -95,12 +93,11 @@ function longestString(strs) {
 */
 
 function computeUserAverageAge(users) {
-     numUsers = users.length();
      sumAges = 0;
-     users.foreach(user) {
+     users.forEach(user) {
           sumAges += user.age;
      }
-     return Math.round(sumAges/numUsers);
+     return Math.round(sumAges/users.length());
 };
 
 module.exports = {
