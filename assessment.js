@@ -95,11 +95,10 @@ function longestString(strs) {
 */
 
 function computeUserAverageAge(users) {
-     numUsers = 0;
+     numUsers = users.length();
      sumAges = 0;
      users.foreach(user) {
-          numUsers ++1;
-          sumAges += sumAges;
+          sumAges += user.age;
      }
      return Math.round(sumAges/numUsers);
 };
