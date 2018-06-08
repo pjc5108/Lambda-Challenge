@@ -7,6 +7,8 @@ After writing your function uncomment the matching function reference at the bot
 // 1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 function helloWorld() {
+     
+     return "Hello World!";
 
 }
 
@@ -23,8 +25,31 @@ function helloWorld() {
              lambdaSchool(8); // returns 8
 */
 
-function lambdaSchool() {
+// function lambdaSchool(num) {
+//      var threeDiv = num % 3;
+//      var fiveDiv = num % 5;
+//      //check divisor variables values
+//      if (threeDiv == 0) {
+//           if(fiveDiv == 0) {
+//                return "Lambda School";
+//           } else { 
+//                return "Lambda";
+//           }
+//      } else if(fiveDiv == 0)  {
+//           return "School";
+//      } else {
+//           return num;
+//      }
+// }
 
+function lambdaSchool(num) {
+     var threeDiv = num % 3;
+     var fiveDiv = num % 5;
+     var resultArray = [num];
+     if (fiveDiv = 0) {resultArray.unshift("School")};
+     if (threeDiv = 0) {resultArray.unshift("Lambda")};
+     if (resultArray.length() = 3) {return resultArray[0] + " " + resultArray[1]};
+     if (resultArray.length() < 3) {return resultArray[0]};
 }
 
 /*
